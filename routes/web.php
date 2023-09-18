@@ -26,7 +26,7 @@ Route::get('task',[
 Route::get('task/create',[
     TaskController::class,
     'create'
-])->middleware('auth');
+])->middleware('auth')->name('task.create');
 
 Route::post('task',[
     TaskController::class,
